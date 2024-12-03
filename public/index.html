@@ -4,10 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel = "stylesheet" href = "style.css">  
-        <title>Not Catan</title>
+        <title>Islanders</title>
     </head>
     <body>
-        <container id = "HomeContainer">
+        <!-- <container id = "HomeContainer">
             <button id = "CreateGame" onclick = "GoToCreateGame(); CreateGame()">Create Game</button>
             <button id = "FindGame" onclick = "GoToFindGame(); GetServerList()">Find Game</button>
         </container>
@@ -20,7 +20,7 @@
             </div>
     
             <div id = "Buttons">
-                <button class = "CreateGameButton" id = "StartGame" >Start Game</button>
+                <button class = "CreateGameButton" id = "StartGame"  onclick = "GoToGame(); StartGame()">Start Game</button>
                 <button class = "CreateGameButton" id = "LeaveGame" onclick = "GoToHomeScreen(); LeaveGame()">Leave Game</button>
             </div>
         </container>
@@ -28,11 +28,19 @@
         <container id = "FindGameContainer">
             <div class = "ScrollContainer" id = "ServerList"></div>
             <button id = "Return" onclick = "GoToHomeScreen()">Return</a></button>
+        </container> -->
+
+        <container id = "GameContainer">
+            <canvas id = "GameCanvas"></canvas>
         </container>
 
         <script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>
-        <script src = "js/index.js"></script>
-        <script src = "js/CreateGame.js"></script>
-        <script src = "js/FindGame.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser-arcade-physics.min.js"></script>
+        <script src = "Server/index.js"></script>
+        <script src = "Server/CreateGame.js"></script>
+        <script src = "Server/FindGame.js"></script>
+
+        <script src = "Game/main.js"></script>
+
     </body>
 </html>
