@@ -1,0 +1,96 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+    background-color: #94a3b8;
+}
+
+container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    gap: 2%;
+}
+
+#CreateGameContainer, #FindGameContainer {
+    display: none;
+}
+
+button {
+    background-color: cornflowerblue;
+    width: 20vw;
+    height: 5vw;
+    border-style:none;
+    border-radius: 1000px;
+    box-shadow: 5px 5px 10px;
+    transition: background-color 0.5s, scale 0.5s;
+    font-family: system-ui;
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+
+button, div {
+    font-family: system-ui;
+    font-size: 2.4vw;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(40, 84, 167);
+    scale: 1.1;
+}
+
+
+#PlayersTitle {
+    text-decoration: none;
+    color: black;
+    font-family: system-ui;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.ScrollContainer {
+    overflow-y: auto;
+    width: 50vw;
+    height: 30vw;
+    background-color: rgba(10, 10, 10, 0.2);
+    border-color: rgb(60, 60, 60);
+    border-style: solid;
+    border-radius: 10px;
+    font-size: 50px;
+    text-wrap: wrap;
+}
+
+#ServerList {
+    height: 40vw;
+}
+
+.Player {
+    width: 90%;
+    height: 20%;
+    margin-left: calc(5% - 4px);
+    margin-top: 5%;
+    padding-left: 1%;
+    border-color: rgb(60, 60, 60);
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 10px;
+    font-size: 50px;
+    text-wrap: wrap;
+}
+
+
+#Buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.CreateGameButton {
+    width: 10vw;
+    height: 2.5 vw;
+    font-size: 1.5vw;
+}
